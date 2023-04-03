@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+/* General Styles & Resets */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Layout & Appearance */
+.mainContainer {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.taskOne div>div {
+    border: 1px dashed #333;
+    font-size: 4rem;
+}
+
+section {
+    padding: 2em 0;
+}
+
+p {
+    margin-bottom: 2em;
+}
+
+.taskThree .grid div {
+    padding: 2em; 
+}
+
+.taskOne .container div {
+    text-align:center; 
+}
+
+img {
+    max-width: 100%; 
+    height: auto; 
+    margin: 2em auto; 
+}
+
+/*Typography */
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+/* Your Code Here! */
+
+/* TASK ONE */
+.taskOne .container {
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    display:grid;
+}
+
+
+/* TASK TWO */
+
+.taskTwo .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px;
+    gap: 10px;
+}
+
+.item1 {
+    background-color: rgb(257,87,20); 
+    grid-column:1 / 4;
+    grid-row:1/3;
+}
+
+.item2 {
+    background-color: rgba(232,170, 20, 0.5); 
+    grid-column:2 / -1;
+    grid-row:2/4;
+}
+
+
+
+
+
+/* TASK THREE */ 
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;          
+    gap: 20px;
+  }
+  
+  .one {
+    background-color: #D1495B;
+    grid-row:1;
+    grid-column:span 3;
+    
+  }
+  
+  .two {
+    background-color: #00798C;
+    grid-row:2;
+  }
+  
+  .three {
+    background-color: #EDAE49;
+  }
+  
+  .four {
+    background-color: #30638E;
+    grid-row:3;
+    grid-column:2 / 3; 
+  }
+
+  /* Challenges Adapted from https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grid_skills */ 
